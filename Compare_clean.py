@@ -1,3 +1,8 @@
+#Packages to install for script to work 
+#pip install python-dotenv
+#pip install pyokx
+#pip install python-binance
+#pip install pandas
 #########################Imports###############################
 from binance.client import AsyncClient, Client
 from dotenv import load_dotenv
