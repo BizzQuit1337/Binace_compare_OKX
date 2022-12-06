@@ -5,7 +5,6 @@ from pyokx import OKXClient, Publicdata
 import pandas as pd
 
 #########################Functions############################
-
 ##Functino to save to excel 
 def saveExcel(dict, fileName, sheetName):
     try:
@@ -89,7 +88,6 @@ instruments_okx = Publicdata(okx_client)
 okx_data_raw = instruments_okx.get_instruments('FUTURES')
 
 #########################Cleaning data######################
-
 ##Cleaning binance data
 binance_data_dict = binance_data_raw['symbols']
 binance_data_clean = []
