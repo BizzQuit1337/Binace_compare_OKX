@@ -119,9 +119,9 @@ for i in range(0, len(binance_data_raw['symbols'])):
 okx_data_clean = okx_data_raw.to_df()
 
 #########################Saving to excel######################
-saveExcel(tickSymbol, 'Metadata_Binance.xlsx', 'binanceMeta') #Specific filter from the binance full data
-saveExcel(binance_data_dict, 'Metadata_Binance(symbols).xlsx', 'binanceMeta') #Full data
+saveExcel(tickSymbol, 'Binance_symbol_tickSize.xlsx', 'binanceMeta') #Specific filter from the binance full data
+saveExcel(binance_data_dict, 'Metadata_Binance.xlsx', 'binanceMeta') #Full data
 saveExcel(okx_data_clean, 'Metadaya_OKX.xlsx', 'okxMeta') #full data
 
 #########################Comparing data######################
-saveExcel(compare(okx_data_clean.to_dict(), tickSymbol), 'test.xlsx', 'test')
+saveExcel(compare(okx_data_clean.to_dict(), tickSymbol), 'Compare.xlsx', 'okx/binance')
